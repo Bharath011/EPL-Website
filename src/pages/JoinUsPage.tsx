@@ -30,7 +30,7 @@ export default function JoinUsPage() {
         <div className="container about-grid">
           <div className="about-copy" data-reveal>
             <p className="eyebrow">Join us</p>
-            <h2 id="join-title">Become Part of EPL</h2>
+            <h2 id="join-title">Become part of EPL</h2>
             <p>The Energetics and Propulsion Laboratory welcomes motivated PhD scholars, M.Tech scholars, project staff, and collaborators.</p>
             <p>Researchers at EPL work on rocket propulsion, energetic materials, combustion diagnostics, electric propulsion, and sustainable aerospace fuels.</p>
             <p>To inquire about opportunities, contact our lab directly and share your research interests, academic background, and relevant experience.</p>
@@ -41,7 +41,7 @@ export default function JoinUsPage() {
             </div>
           </div>
           <div className="image-panel" data-reveal>
-            <img src="/prof-gnanaprakash.jpeg" alt="Dr. Gnanaprakash Kanagaraj" loading="lazy" />
+            <img src="/1779818559883.png" alt="EPL logo" loading="lazy" />
           </div>
         </div>
       </section>

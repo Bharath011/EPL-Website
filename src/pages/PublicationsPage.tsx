@@ -39,7 +39,7 @@ export default function PublicationsPage() {
     <main id="main">
       <section className="section" id="publications" aria-labelledby="publications-title">
         <div className="container">
-          <SectionHeading eyebrow="Publications" title="Placeholder Publications" text="Placeholder publication records prepared for future real laboratory outputs." />
+          <SectionHeading eyebrow="" title="Publications" text="Selected peer-reviewed articles and conference proceedings from EPL researchers." />
           <div className="publication-list">
             {publications.map((publication) => (
               <article className="publication-card" key={publication.doi} data-reveal>
@@ -48,7 +48,6 @@ export default function PublicationsPage() {
                   <p>{publication.authors}</p>
                   <span>{publication.outlet}{publication.year ? ` | ${publication.year}` : ""}{publication.doi ? ` | DOI: ${publication.doi}` : ""}</span>
                 </div>
-                <a className="button button-ghost" href="/contact" aria-label={`Download ${publication.title}`}>Download</a>
               </article>
             ))}
           </div>

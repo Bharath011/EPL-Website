@@ -57,8 +57,6 @@ export default function TeamPage() {
                     <img src={member.image} alt={`${member.name} profile photo`} loading="lazy" />
                     <h3>{member.name}</h3>
                     <p>{member.position}</p>
-                    {member.interests && <span>{member.interests}</span>}
-                    {member.email ? <a href={`mailto:${member.email}`}>{member.email}</a> : null}
                   </article>
                 ))}
               </div>

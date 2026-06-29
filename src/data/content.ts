@@ -2,6 +2,9 @@
   title: string;
   description: string;
   image: string;
+  bullets?: string[];
+  images?: string[];
+  video?: string;
 };
 
 export type NewsItem = {
@@ -67,25 +70,120 @@ export const stats = [
 
 export const researchAreas: ResearchArea[] = [
   {
-    title: "Combustion and hydrolysis of metal particles for recyclable energy",
-    description: "Metal-water reactor development, particle dispersion and concentration measurement, flame shape and structure dynamics, laminar flame speed and temperature measurements for aluminium, iron, and magnesium fuels.",
-    image: "https://placehold.co/900x620/dce9f7/0b5dab?text=Metal+Particle+Research"
+    title: "Combustion and Hydrolysis of Metal Particles for Recyclable Energy with Zero-Carbon Emissions",
+    description: "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
+    image: "/research-media-1.gif",
+    images: ["/research-media-17.png"],
+    bullets: [
+      "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
+      "Studying multiphase combustion phenomena in particle-laden and hybrid fuel flames to advance the understanding of reactive flow physics.",
+      "Exploring combustion chemistry, flame dynamics, and stability to enable cleaner and more efficient combustion technologies.",
+      "Developing and applying advanced optical diagnostics for quantitative flame characterization and detailed reactive flow analysis.",
+    ],
   },
   {
-    title: "Solid rocket propellants and performance",
-    description: "Aging characterization for shelf-life prediction, nano-aluminium additives for rate control and smoke reduction, plateau burning propellants, combustion instability measurements, and additive manufacturing for solid rocket motors.",
-    image: "https://placehold.co/900x620/e8edf3/174b7a?text=Solid+Rocket+Propellants"
+    title: "Investigation on Combustion Characteristics of Composite Solid Propellants with Metal and Metal Hydride Additives",
+    description: "Studying burning rates, agglomeration, and combustion performance of Al, Mg, B, LiAlH₄, MgH₂, TiH₂, and ZrH₂ enhanced propellants.",
+    image: "/research-media-18.png",
+    images: ["/research-media-19.jpeg"],
+    bullets: [
+      "Metal additives in composite solid propellants — Aluminum (Al), Magnesium (Mg), and Boron (B).",
+      "Micro-sized vs. nano-sized metal additives — Effects on burning rate and agglomeration.",
+      "Metal hydride-based composite solid propellants — LiAlH₄, MgH₂, TiH₂, and ZrH₂.",
+      "Combustion characterization — Burning rate, high-speed flame imaging, and agglomerate analysis.",
+      "Experimental and thermochemical evaluation of advanced energetic additives for solid rocket propulsion.",
+    ],
   },
   {
-    title: "Development of pyroelectric solid propellants (PSPs)",
-    description: "Pyroelectric combustion behaviour with electric power gating, multiple start/stop and throttle control, and applications for attitude control and retro thrusters while studying electrochemical decomposition mechanisms.",
-    image: "https://placehold.co/900x620/e1f1ed/17685c?text=PSP+Research"
+    title: "Investigation on Metallized Hydro-reactive Propellants and Propulsive Performance of Water-Breathing Ramjet Engines",
+    description: "Developing metal-based hydro-reactive fuels and water-breathing ramjet systems for underwater propulsion with improved thrust and efficiency.",
+    image: "/research-media-21.png",
+    images: ["/research-media-20.png", "/research-media-22.jpeg", "/research-media-2.png"],
+    bullets: [
+      "Developing advanced metal-based propellants for underwater propulsion systems.",
+      "Studying how hydro-reactive propellants burn and perform underwater.",
+      "Designing and testing water-breathing ramjet engines for better performance.",
+      "Improving thrust, burn rate, and engine efficiency through experiments.",
+      "Using advanced testing techniques to understand combustion and propellant behavior.",
+      "Building safer, more efficient, and high-performance underwater propulsion technologies.",
+    ],
   },
   {
-    title: "Characterization of pyrotechnic igniters and delay materials",
-    description: "Thermal decomposition, chemical kinetics, ignition delay, minimum ignition energy, flame temperature, burning rate, and aging mechanisms for energetic materials.",
-    image: "https://placehold.co/900x620/f1f4f8/274960?text=Igniters+&+Delays"
-  }
+    title: "Combustion Response Measurement of Composite Solid Propellants using T-Burner and Pulsed BEM",
+    description: "Measuring solid propellant combustion response, acoustic effects, and motor performance using T-burners and pulsed burner element motor tests.",
+    image: "/research-media-3.png",
+    images: ["/research-media-4.jpeg", "/research-media-5.jpeg", "/research-media-6.jpeg"],
+    bullets: [
+      "Measures combustion response using the T-burner technique.",
+      "Characterizes pulsed T-burner tests for non-self-excited propellants.",
+      "Investigates the effect of initial grain temperature on combustion response.",
+      "Demonstrates the influence of propellant composition on stability.",
+      "Predicts solid rocket motor stability using combustion response data.",
+      "Designing and manufacturing of a complete 3 kg BEM test motor for propellant evaluation.",
+      "Conducting tests at different acoustic frequencies to study combustion behavior.",
+      "Measurement of chamber pressure and burning performance during motor operation.",
+    ],
+  },
+  {
+    title: "Development of Electrically Controlled Solid Propellants (ECSPs)",
+    description: "Formulating electrically responsive propellants with conductive additives for controllable ignition, micro-thrusters, and spacecraft propulsion applications.",
+    image: "/research-media-7.png",
+    images: ["/research-media-8.jpeg", "/research-media-9.jpeg"],
+    video: "/research-media-24.mp4",
+    bullets: [
+      "Development of electrically controlled solid propellants (ECSPs) with electrically initiated and controllable combustion.",
+      "Formulation and optimization of advanced oxidizer systems for enhanced ignition and combustion performance.",
+      "Development of PVA- and PEO-based polymer binder systems for electrically responsive propellants.",
+      "Incorporation of metallic additives to improve energy release and combustion characteristics.",
+      "Integration of carbon-based conductive additives to enhance electrical conductivity and ignition reliability.",
+      "Investigation of catalytic additives for improved ignition and combustion efficiency.",
+      "Experimental evaluation of ignition, burn rate, combustion stability, and thrust performance.",
+      "Design and development of ECSP-based micro-thrusters for advanced propulsion applications.",
+      "Research on ECSP applications for nano- and micro-satellites, spacecraft, missile attitude control, and gas generator systems.",
+    ],
+  },
+  {
+    title: "In-situ Measurements of Aluminum Agglomerate Size, Velocity, and Temperature Using Simultaneous Digital Inline Holography and Imaging Pyrometry",
+    description: "Combining digital inline holography and imaging pyrometry to quantify aluminum agglomerate size, velocity, temperature, and combustion dynamics.",
+    image: "/research-media-10.gif",
+    images: ["/research-media-11.gif"],
+    bullets: [
+      "Integrated Digital Inline Holography (DIH) and imaging pyrometry diagnostic system.",
+      "Real-time DIH reconstruction using machine learning for high-speed particle field analysis.",
+      "Simultaneous measurements of aluminum agglomerate size, velocity, and temperature.",
+      "Image processing algorithms for quantitative agglomerate temperature estimation.",
+      "Thermo-physical characterization of agglomeration dynamics near the propellant burning surface.",
+      "High-speed optical diagnostics of combustion and particulate evolution in composite solid propellants.",
+    ],
+  },
+  {
+    title: "Experimental and Numerical Investigation of Swirling and Non-swirling Flow for Gaseous and Solid Fuels",
+    description: "Experimental and numerical analysis of flame topologies, stabilization modes, ammonia-metal combustion, and residue chemistry.",
+    image: "/research-media-13.jpg",
+    images: ["/research-media-14.jpg"],
+    bullets: [
+      "Investigation of flame topologies.",
+      "Flame stabilization modes (burner attached, lifted, and swirling flames).",
+      "Reaction of ammonia with metals.",
+      "Effect of ammonia over metal combustion as pilot fuel.",
+      "Residue analysis of combustion products and flue gases.",
+      "Analysis of reaction mechanism for ammonia, aluminum, and magnesium.",
+    ],
+  },
+  {
+    title: "Solid Fuel Ducted Ramjet (SFDR) Propulsion",
+    description: "Developing boron-based SFDR fuels with titanium and magnesium hydrides to improve ignition, combustion efficiency, and thrust performance.",
+    image: "/research-media-15.jpeg",
+    images: ["/research-media-16.jpeg"],
+    bullets: [
+      "Development of high-energy boron-based composite fuels for Solid Fuel Ducted Ramjet (SFDR) propulsion.",
+      "Investigation of titanium and magnesium hydride additives to improve boron ignition and combustion efficiency.",
+      "Experimental evaluation of combustion characteristics, fuel regression, and thrust performance of SFDR fuels.",
+      "Characterization of combustion residues using advanced materials analysis techniques to understand reaction mechanisms.",
+      "Design and testing of laboratory-scale SFDR propulsion systems for high-speed air-breathing applications.",
+      "Optimization of fuel formulations to enhance propulsion efficiency and extend the operational range of next-generation missiles.",
+    ],
+  },
 ];
 
 export const newsItems: NewsItem[] = Array.from({ length: 8 }, (_, index) => ({
@@ -340,7 +438,7 @@ export const projects: Project[] = [
 export const members: Member[] = [
   {
     name: "Dr. Gnanaprakash Kanagaraj",
-    position: "Assistant Professor, Head of Laboratory",
+    position: "Assistant Professor,   Head of Laboratory",
     interests: "Rocket propulsion, energetic materials, electric propulsion, diagnostics, and green aerospace fuels.",
     email: "gnan@mae.iith.ac.in",
     image: "/team-rId4.jpeg",
@@ -354,6 +452,13 @@ export const members: Member[] = [
     group: "PhD Scholars"
   },
   {
+    name: "Deepachanthiran RK",
+    position: "PhD Scholar",
+    interests: "Energetic systems modeling and experimental propulsion.",
+    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Deepachanthiran+RK",
+    group: "PhD Scholars"
+  },
+  {
     name: "Rishabh Dhadiwal",
     position: "PhD Scholar",
     interests: "High-energy materials and combustion diagnostics.",
@@ -361,115 +466,108 @@ export const members: Member[] = [
     group: "PhD Scholars"
   },
   {
-    name: "Deepachanthiran RK",
+    name: "Mallidi Jaswanth Reddy",
     position: "PhD Scholar",
-    interests: "Energetic systems modeling and experimental propulsion.",
+    interests: "Propellant formulation and combustion testing.",
     image: "/team-rId7.jpeg",
     group: "PhD Scholars"
   },
   {
-    name: "Mallidi Jaswanth Reddy",
-    position: "M. Tech Scholar",
-    interests: "Propellant formulation and combustion testing.",
-    image: "/team-rId8.jpeg",
-    group: "M. Tech Scholars"
-  },
-  {
     name: "Senthil Kumar R",
-    position: "M. Tech Scholar",
+    position: "PhD Scholar",
     interests: "Pyrotechnic igniters and aging behavior.",
-    image: "/team-rId9.jpeg",
-    group: "M. Tech Scholars"
+    image: "/team-rId8.jpeg",
+    group: "PhD Scholars"
   },
   {
     name: "Harshavardhan Madishetti",
     position: "M. Tech Scholar",
     interests: "Electric solid propellant combustion and diagnostics.",
-    image: "/team-rId10.jpeg",
+    image: "/team-rId9.jpeg",
     group: "M. Tech Scholars"
   },
   {
     name: "Shanmukha Adithya Anupindi",
     position: "M. Tech Scholar",
     interests: "Energetic materials and rocket propulsion studies.",
-    image: "/team-rId11.jpeg",
+    image: "/team-rId10.jpeg",
     group: "M. Tech Scholars"
   },
   {
     name: "Pangambam Lenin Singh",
     position: "M. Tech Scholar",
     interests: "Solid rocket propellant performance and analysis.",
-    image: "/team-rId12.jpeg",
+    image: "/team-rId11.jpeg",
     group: "M. Tech Scholars"
   },
   {
     name: "Arohi Mathur",
     position: "M. Tech Scholar",
     interests: "Diagnostics, imaging, and combustion behavior.",
-    image: "/team-rId13.jpeg",
+    image: "/team-rId12.jpeg",
     group: "M. Tech Scholars"
   },
   {
     name: "Dr. Rajneesh Kumar Yadav",
     position: "Project Staff",
     interests: "Propulsion experiments and lab coordination.",
-    image: "/team-rId14.jpeg",
+    image: "/team-rId13.jpeg",
     group: "Project Staffs"
   },
   {
     name: "Naresh Kumar",
     position: "Project Staff",
     interests: "Experimental support and energetic materials testing.",
-    image: "/team-rId15.jpeg",
+    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Naresh+Kumar",
     group: "Project Staffs"
   },
   {
     name: "Vishnu Vikrama Simman R",
     position: "Project Staff",
     interests: "Instrumentation and propellant characterization.",
-    image: "/team-rId16.jpeg",
+    image: "/team-rId14.jpeg",
     group: "Project Staffs"
   },
   {
     name: "Arpit Dubey",
     position: "Project Staff",
     interests: "Data acquisition and propulsion system support.",
-    image: "/team-rId17.jpeg",
+    image: "/team-rId15.jpeg",
     group: "Project Staffs"
   },
   {
     name: "MNS Harsha Vardhan",
     position: "Project Staff",
     interests: "Lab operations and energetic materials experiments.",
-    image: "/team-rId18.jpeg",
+    image: "/team-rId16.jpeg",
     group: "Project Staffs"
   },
   {
     name: "Prateek Jain",
     position: "Alumni",
     interests: "Former EPL researcher in combustion and propulsion.",
-    image: "/team-rId19.jpeg",
+    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Prateek+Jain",
     group: "Alumni"
   },
   {
     name: "Abhik Mukhopadhyay",
     position: "Alumni",
     interests: "Former student researcher in energetic materials.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Abhik+Mukhopadhyay",
+    image: "/team-rId17.jpeg",
     group: "Alumni"
   },
   {
     name: "Shreyas Sahu",
     position: "Alumni",
     interests: "Former team member working on propellant diagnostics.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Shreyas+Sahu",
+    image: "/team-rId18.jpeg",
     group: "Alumni"
   },
   {
     name: "Amit Kumar Mishra",
     position: "Alumni",
     interests: "Former researcher in propulsion and experimental analysis.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Amit+Kumar+Mishra",
+    image: "/team-rId19.jpeg",
     group: "Alumni"
   },
   {
@@ -477,6 +575,13 @@ export const members: Member[] = [
     position: "Alumni",
     interests: "Former lab researcher focused on combustion studies.",
     image: "https://placehold.co/520x620/e8edf3/285f9f?text=Sairaj+Gaunekar",
+    group: "Alumni"
+  },
+  {
+    name: "Harshith Reddy Kaila",
+    position: "Alumni",
+    interests: "Former lab researcher focused on combustion studies.",
+    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Harshith+Reddy+Kaila",
     group: "Alumni"
   }
 ];

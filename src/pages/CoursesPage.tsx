@@ -40,9 +40,9 @@ export default function CoursesPage() {
       <section className="section" id="courses" aria-labelledby="courses-title">
         <div className="container">
           <SectionHeading
-            eyebrow="Courses"
-            title="Professor Course Offerings"
-            text="Course content is sourced from the professor's official profile and reflects the current aerospace propulsion offering."
+            eyebrow=""
+            title="Courses"
+            text="EPL researchers contribute to graduate and undergraduate courses in aerospace engineering, mechanical engineering, and related fields. The following courses are offered by EPL faculty."
           />
           <div className="card-grid three">
             {courses.map((course) => (

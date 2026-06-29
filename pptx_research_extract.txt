@@ -1,0 +1,58 @@
+slides:
+--- ppt/slides/slide1.xml
+TEXT: Combustion And Hydrolysis Of Metal Particles For Recyclable Energy With Zero-carbon Emissions | Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems. | Studying multiphase combustion phenomena in particle-laden and hybrid fuel flames to advance the understanding of reactive flow physics. | Exploring combustion chemistry, flame dynamics, and stability to enable cleaner and more efficient combustion technologies. |  Developing and applying advanced optical diagnostics for quantitative flame characterization and detailed reactive flow analysis.
+RELS:
+
+--- ppt/slides/slide2.xml
+TEXT: Investigation on Combustion Characteristics of Composite Solid Propellants with Metal and Metal Hydride Additives | Metal additives in composite solid propellants - Aluminum (Al), Magnesium (Mg), and Boron (B) | Micro-sized vs. nano-sized metal additives - Effects on burning rate and agglomeration | Metal hydride-based composite solid propellants -  | LiAlH | ₄, MgH₂,  | TiH | ₂, and  | ZrH | ₂ | Combustion characterization - Burning rate, high-speed flame imaging, and agglomerate analysis | Experimental and thermochemical evaluation of advanced energetic additives for solid rocket propulsion
+RELS:
+
+--- ppt/slides/slide3.xml
+TEXT: Investigation On Metallized Hydro-reactive Propellants And Propulsive Performance Of Water Breathing Ramjet Engines | Developing advanced metal-based propellants for underwater propulsion systems.  | Studying how hydro-reactive propellants burn and perform underwater.  | Designing and testing water-breathing ramjet engines for better performance.  | Improving thrust, burn rate, and engine efficiency through experiments.  | Using advanced testing techniques to understand combustion and propellant behavior.  | Building safer, more efficient, and high-performance underwater propulsion technologies.
+RELS:
+
+--- ppt/slides/slide4.xml
+TEXT: Combustion Response Measurement of Composite Solid Propellants using T-Burner and Pulsed BEM | Measures combustion response using the T-burner technique. | Characterizes pulsed T-burner tests for non-self-excited propellants. | Investigates the effect of initial grain temperature on combustion response. | Demonstrates the influence of propellant composition on stability. | Unifies self-excited and pulsed combustion response trends. | Predicts solid rocket motor stability using combustion response data. | Designing and manufacturing of a complete 3 kg BEM test motor for propellant evaluation. | Conducting tests at different acoustic frequencies to study combustion behavior. | Measurement of chamber pressure and burning performance during motor operation. | Generating combustion response data to improve the stability and safety of rocket motors.
+RELS:
+
+--- ppt/slides/slide5.xml
+TEXT: Development of Electrically Controlled Solid Propellants (ECSPs) | Development of electrically controlled solid propellants (ECSPs) with electrically initiated and controllable combustion.  | Formulation and optimization of advanced oxidizer systems for enhanced ignition and combustion performance.  | Development of PVA- and PEO-based polymer binder systems for electrically responsive propellants. Incorporation of metallic additives to improve energy release and combustion characteristics.  | Integration of carbon-based conductive additives to enhance electrical conductivity and ignition reliability. |  Investigation of catalytic additives for improved ignition and combustion efficiency.  | Experimental evaluation of ignition, burn rate, combustion stability, and thrust performance. Design and development of ECSP-based micro-thrusters for advanced propulsion applications.  | Research on ECSP applications for nano- and micro-satellites, spacecraft, missile attitude control, and gas generator systems.
+RELS:
+
+--- ppt/slides/slide6.xml
+TEXT: In-situ Measurements of Aluminum Agglomerate Size, Velocity, and Temperature Using Simultaneous Digital Inline Holography and Imaging Pyrometry | Integrated Digital Inline Holography (DIH) and imaging pyrometry diagnostic system | Real-time DIH reconstruction using machine learning for high-speed particle field analysis | Simultaneous measurements of aluminum agglomerate size, velocity, and temperature | Image processing algorithms for quantitative agglomerate temperature estimation | Thermo-physical characterization of agglomeration dynamics near the propellant burning surface | High-speed optical diagnostics of combustion and particulate evolution in composite solid propellants
+RELS:
+
+--- ppt/slides/slide7.xml
+TEXT: Experimental And Numerical Investigation Of Swirling And Non-swirling Flow For Gaseous (Methane And Ammonia) And Solid Fuels (Metal And Coal) Under Reacting And Non-reacting Conditions. | Investigation of flame topologies. | Flame stabilization modes (burner attached, lifted and swirling flames). | Reaction of ammonia with metals. | Effect of ammonia over metal combustion as pilot fuel. | Residue analysis of combustion product and flue gases. | Analysis of reaction mechanism for ammonia, aluminum and magnesium.
+RELS:
+
+--- ppt/slides/slide8.xml
+TEXT: Solid Fuel Ducted Ramjet (SFDR) Propulsion | Development of high-energy boron-based composite fuels for Solid Fuel Ducted Ramjet (SFDR) propulsion.  | Investigation of titanium and magnesium hydride additives to improve boron ignition and combustion efficiency.  | Experimental evaluation of combustion characteristics, fuel regression, and thrust performance of SFDR fuels.  | Characterization of combustion residues using advanced materials analysis techniques to understand reaction mechanisms.  | Design and testing of laboratory-scale SFDR propulsion systems for high-speed air-breathing applications.  | Optimization of fuel formulations to enhance propulsion efficiency and extend the operational range of next-generation missiles.
+RELS:
+
+media:
+ppt/media/image1.gif
+ppt/media/image10.png
+ppt/media/image11.png
+ppt/media/image12.jpeg
+ppt/media/image13.jpeg
+ppt/media/image14.jpeg
+ppt/media/image15.png
+ppt/media/image16.jpeg
+ppt/media/image17.jpeg
+ppt/media/image18.gif
+ppt/media/image19.gif
+ppt/media/image2.tif
+ppt/media/image20.jpg
+ppt/media/image21.jpg
+ppt/media/image22.jpeg
+ppt/media/image23.jpeg
+ppt/media/image3.png
+ppt/media/image4.png
+ppt/media/image5.jpeg
+ppt/media/image6.png
+ppt/media/image7.png
+ppt/media/image8.jpeg
+ppt/media/image9.png
+ppt/media/media1.mp4

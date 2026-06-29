@@ -14,22 +14,11 @@ function useReveal() {
           }
         });
       },
-      { threshold: 0.16, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
-
-    elements.forEach((element) => observer.observe(element));
+    elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
-}
-
-function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
-  return (
-    <div className="section-heading" data-reveal>
-      <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
-      <p>{text}</p>
-    </div>
-  );
 }
 
 export default function ResearchPage() {
@@ -39,19 +28,56 @@ export default function ResearchPage() {
     <main id="main">
       <section className="section muted" id="research" aria-labelledby="research-title">
         <div className="container">
-          <SectionHeading eyebrow="Research" title="Current Research Focus Areas" text="Current research focuses on combustion and hydrolysis of metal fuel particles, solid rocket propellant performance, pyroelectric solid propellants, and pyrotechnic igniters and delay materials." />
-          <div className="card-grid three">
-            {researchAreas.map((area) => (
-              <article className="feature-card" key={area.title} data-reveal>
-                <img src={area.image} alt={`${area.title} placeholder`} loading="lazy" />
-                <div>
-                  <h3>{area.title}</h3>
-                  <p>{area.description}</p>
-                  <a className="text-link" href="/join">Read More</a>
-                </div>
-              </article>
-            ))}
+          <div className="section-heading" data-reveal>
+            <p className="eyebrow">Research</p>
+            <h2 id="research-title">Research Focus Areas</h2>
+            <p>EPL research covers metal fuel combustion, advanced propellants, electrically controlled solid propellants, diagnostics, and air-breathing propulsion systems.</p>
           </div>
+
+          {researchAreas.map((area, index) => (
+            <article
+              className={`research-block ${index % 2 === 1 ? "research-block--reverse" : ""}`}
+              key={area.title}
+              data-reveal
+            >
+              <div className="research-block__media">
+                <div className="research-block__primary-image">
+                  <img src={area.image} alt={area.title} loading="lazy" />
+                </div>
+                {(area.images && area.images.length > 0) || area.video ? (
+                  <div className="research-block__gallery">
+                    {area.video && (
+                      <video
+                        src={area.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        aria-label={`${area.title} video`}
+                      />
+                    )}
+                    {area.images?.map((img) => (
+                      <img key={img} src={img} alt="" loading="lazy" />
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+
+              <div className="research-block__content">
+                <span className="research-block__number">0{index + 1}</span>
+                <h3 className="research-block__title">{area.title}</h3>
+                {area.bullets && area.bullets.length > 0 ? (
+                  <ul className="research-block__bullets">
+                    {area.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="research-block__desc">{area.description}</p>
+                )}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
     </main>

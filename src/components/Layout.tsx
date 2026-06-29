@@ -45,7 +45,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <nav className="nav-shell" aria-label="Primary navigation">
           <Link className="brand" to="/" onClick={() => setOpen(false)} aria-label="EPL home">
-            <img src="/epl-logo.svg" className="brand-logo" alt="EPL lab logo" />
+            <img src="/1779818559883.png" className="brand-logo" alt="EPL lab logo" />
               <span className="brand-text">Energetics and Propulsion Laboratory</span>
           </Link>
           <button
@@ -78,21 +78,34 @@ export default function Layout({ children }: LayoutProps) {
         <div className="container footer-grid">
           <div>
             <span className="brand-mark">EPL</span>
-            <p>Placeholder footer description for Energy and Propulsion Lab.</p>
+            <p>Energetics and Propulsion Laboratory, IIT Hyderabad.</p>
           </div>
-          <div><h2>Quick Links</h2>{navLinks.slice(0, 5).map((item) => <Link key={item.href} to={item.href}>{item.label}</Link>)}</div>
-          <div><h2>Research Links</h2>{researchAreas.slice(0, 4).map((area) => <Link key={area.title} to="/research">{area.title}</Link>)}</div>
           <div>
             <h2>Contact</h2>
-            <p>502, C-Block, Department of Mechanical and Aerospace Engineering</p>
-            <p>PG Shed Labs 35, 39, 52B</p>
-            <p><a href="mailto:gnan@mae.iith.ac.in">gnan@mae.iith.ac.in</a></p>
-            <p>Phone: 040 2301 6684</p>
-            <p><a href="/join">Join us</a></p>
+            <ul className="footer-contact-list">
+              <li>
+                <svg className="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>502, C-Block, Dept. of Mechanical and Aerospace Engineering &amp; PG Shed Labs 35, 39, 52B — IIT Hyderabad</span>
+              </li>
+              <li>
+                <svg className="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <a href="mailto:gnan@mae.iith.ac.in">gnan@mae.iith.ac.in</a>
+              </li>
+              <li>
+                <svg className="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1.2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.67 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.54 2.81.67a2 2 0 0 1 1.72 2.03z"/>
+                </svg>
+                <span>040 2301 6684</span>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="footer-bottom container">
-          <p>Copyright 2026 Energetics and Propulsion Laboratory. All rights reserved.</p>
+          <p>© 2026 Energetics and Propulsion Laboratory, IIT Hyderabad. All rights reserved.</p>
           <Link className="back-top" to="/" aria-label="Back to top">Top</Link>
         </div>
       </footer>
