@@ -22,6 +22,8 @@ export type Publication = {
   doi?: string;
 };
 
+export const scholarProfileUrl = "https://scholar.google.com/citations?user=xUUG5eAAAAAJ&hl=en";
+
 export type Course = {
   title: string;
   code: string;

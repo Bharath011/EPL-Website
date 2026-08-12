@@ -44,7 +44,7 @@ export default function ResearchPage() {
                 <div className="research-block__primary-image">
                   <img src={area.image} alt={area.title} loading="lazy" />
                 </div>
-                {(area.images && area.images.length > 0) || area.video ? (
+                {((index !== 0 && area.images && area.images.length > 0) || area.video) ? (
                   <div className="research-block__gallery">
                     {area.video && (
                       <video
@@ -56,7 +56,7 @@ export default function ResearchPage() {
                         aria-label={`${area.title} video`}
                       />
                     )}
-                    {area.images?.map((img) => (
+                    {index !== 0 && area.images?.map((img) => (
                       <img key={img} src={img} alt="" loading="lazy" />
                     ))}
                   </div>
