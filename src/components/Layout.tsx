@@ -45,7 +45,7 @@ export default function Layout({ children }: LayoutProps) {
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
         <nav className="nav-shell" aria-label="Primary navigation">
           <Link className="brand" to="/" onClick={() => setOpen(false)} aria-label="EPL home">
-            <img src="/1779818559883.png" className="brand-logo" alt="EPL lab logo" />
+            <img src="/EPL-LogoNew.png" className="brand-logo" alt="EPL lab logo" />
               <span className="brand-text">Energetics and Propulsion Laboratory</span>
           </Link>
           <button
@@ -106,7 +106,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
         <div className="footer-bottom container">
           <p>© 2026 Energetics and Propulsion Laboratory, IIT Hyderabad. All rights reserved.</p>
-          <Link className="back-top" to="/" aria-label="Back to top">Top</Link>
+          <a className="back-top" href="#main" aria-label="Back to top">Top</a>
         </div>
       </footer>
     </>

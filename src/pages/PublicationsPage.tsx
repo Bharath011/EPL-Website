@@ -44,7 +44,6 @@ const isConferencePublication = (outlet: string) => {
     "symposium",
     "colloquium",
     "conference",
-    "proceedings",
     "meeting",
     "workshop",
     "icders",
@@ -67,9 +66,9 @@ export default function PublicationsPage() {
   const journalPublications = sortedPublications.filter((publication) => !isConferencePublication(publication.outlet));
 
   const renderPublication = (publication: typeof publications[number], index: number) => (
-    <article className="publication-card" key={`${publication.title}-${publication.year}-${index}`} data-reveal>
+    <article className="publication-card" key={`${publication.title}-${publication.year}-${index}`} >
       <div>
-        <h3>{index + 1}. {publication.title}</h3>
+        <h3 style={{ marginTop: 0 }}>{index + 1}. {publication.title}</h3>
         <p>{publication.authors}</p>
         <span>{publication.outlet}{publication.year ? ` | ${publication.year}` : ""}{publication.doi ? ` | DOI: ${publication.doi}` : ""}</span>
       </div>
@@ -87,14 +86,14 @@ export default function PublicationsPage() {
             </p>
           </div>
 
-          <div className="publication-section" data-reveal>
+          <div className="publication-section">
             <h3>Journal Publications ({journalPublications.length})</h3>
             <div className="publication-list">
               {journalPublications.map((publication, index) => renderPublication(publication, index))}
             </div>
           </div>
 
-          <div className="publication-section" data-reveal>
+          <div className="publication-section" style={{ marginTop: "2.5rem" }}>
             <h3>Conference Publications ({conferencePublications.length})</h3>
             <div className="publication-list">
               {conferencePublications.map((publication, index) => renderPublication(publication, index))}

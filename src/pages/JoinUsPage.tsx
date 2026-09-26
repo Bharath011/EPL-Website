@@ -35,13 +35,13 @@ export default function JoinUsPage() {
             <p>Researchers at EPL work on rocket propulsion, energetic materials, combustion diagnostics, electric propulsion, and sustainable aerospace fuels.</p>
             <p>To inquire about opportunities, contact our lab directly and share your research interests, academic background, and relevant experience.</p>
             <div className="contact-details">
-              <p><strong>Email</strong><span><a href="mailto:gnan@mae.iith.ac.in">gnan@mae.iith.ac.in</a></span></p>
+              <p><strong>Email</strong><span><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=gnan@mae.iith.ac.in" target="_blank" rel="noopener noreferrer" style={{ color: "blue", fontWeight: "bold" }}>gnan@mae.iith.ac.in</a></span></p>
               <p><strong>Phone</strong><span>040 2301 6684</span></p>
               <p><strong>Location</strong><span>502, C-Block, Department of Mechanical and Aerospace Engineering; PG Shed Labs 35, 39, 52B</span></p>
             </div>
           </div>
           <div className="image-panel" data-reveal>
-            <img src="/1779818559883.png" alt="EPL logo" loading="lazy" />
+             <img src="/EPL-LogoNew.png" className="brand-logo" alt="EPL lab logo" />
           </div>
         </div>
       </section>

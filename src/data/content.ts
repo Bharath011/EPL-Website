@@ -74,8 +74,8 @@ export const researchAreas: ResearchArea[] = [
   {
     title: "Combustion and Hydrolysis of Metal Particles for Recyclable Energy with Zero-Carbon Emissions",
     description: "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
-    image: "/research-media-1.gif",
-    images: ["/research-media-17.png"],
+    image: "/research-media-12.png",
+    images: ["/research-media-1-ezgif.com-resize.gif"],
     bullets: [
       "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
       "Studying multiphase combustion phenomena in particle-laden and hybrid fuel flames to advance the understanding of reactive flow physics.",
@@ -138,10 +138,7 @@ export const researchAreas: ResearchArea[] = [
       "Development of PVA- and PEO-based polymer binder systems for electrically responsive propellants.",
       "Incorporation of metallic additives to improve energy release and combustion characteristics.",
       "Integration of carbon-based conductive additives to enhance electrical conductivity and ignition reliability.",
-      "Investigation of catalytic additives for improved ignition and combustion efficiency.",
-      "Experimental evaluation of ignition, burn rate, combustion stability, and thrust performance.",
-      "Design and development of ECSP-based micro-thrusters for advanced propulsion applications.",
-      "Research on ECSP applications for nano- and micro-satellites, spacecraft, missile attitude control, and gas generator systems.",
+      "Investigation of catalytic additives for improved ignition and combustion efficiency."
     ],
   },
   {
@@ -162,7 +159,6 @@ export const researchAreas: ResearchArea[] = [
     title: "Experimental and Numerical Investigation of Swirling and Non-swirling Flow for Gaseous and Solid Fuels",
     description: "Experimental and numerical analysis of flame topologies, stabilization modes, ammonia-metal combustion, and residue chemistry.",
     image: "/research-media-13.jpg",
-    images: ["/research-media-14.jpg"],
     bullets: [
       "Investigation of flame topologies.",
       "Flame stabilization modes (burner attached, lifted, and swirling flames).",
@@ -172,6 +168,7 @@ export const researchAreas: ResearchArea[] = [
       "Analysis of reaction mechanism for ammonia, aluminum, and magnesium.",
     ],
   },
+  /*
   {
     title: "Solid Fuel Ducted Ramjet (SFDR) Propulsion",
     description: "Developing boron-based SFDR fuels with titanium and magnesium hydrides to improve ignition, combustion efficiency, and thrust performance.",
@@ -186,6 +183,7 @@ export const researchAreas: ResearchArea[] = [
       "Optimization of fuel formulations to enhance propulsion efficiency and extend the operational range of next-generation missiles.",
     ],
   },
+  */
 ];
 
 export const newsItems: NewsItem[] = Array.from({ length: 8 }, (_, index) => ({
@@ -457,7 +455,7 @@ export const members: Member[] = [
     name: "Deepachanthiran RK",
     position: "PhD Scholar",
     interests: "Energetic systems modeling and experimental propulsion.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Deepachanthiran+RK",
+    image: "/Deepachanthiran.jpeg",
     group: "PhD Scholars"
   },
   {
@@ -479,6 +477,20 @@ export const members: Member[] = [
     position: "PhD Scholar",
     interests: "Pyrotechnic igniters and aging behavior.",
     image: "/team-rId8.jpeg",
+    group: "PhD Scholars"
+  },
+  {
+    name: "Abhik Mukhopadhyay",
+    position: "PhD Scholar",
+    interests: "Diagnostics, imaging, and combustion behavior.",
+    image: "/team-rId17.jpeg",
+    group: "PhD Scholars"
+  },
+  {
+    name: "Sharon",
+    position: "PhD Scholar",
+    interests: "Propulsion experiments and lab coordination.",
+    image: "/sharon.jpeg",
     group: "PhD Scholars"
   },
   {
@@ -510,6 +522,20 @@ export const members: Member[] = [
     group: "M. Tech Scholars"
   },
   {
+    name: "Balaji",
+    position: "M. Tech Scholar",
+    interests: "Electric solid propellant combustion and diagnostics.",
+    image: "/Balaji.jpeg",
+    group: "M. Tech Scholars"
+  },
+  {
+    name: "Mohit Chaudhary",
+    position: "M. Tech Scholar",
+    interests: "Digital-inline holography and pyrometry for combustion diagnostics.",
+    image: "/Mohit.png",
+    group: "M. Tech Scholars"
+  },
+  {
     name: "Dr. Rajneesh Kumar Yadav",
     position: "Project Staff",
     interests: "Propulsion experiments and lab coordination.",
@@ -520,7 +546,7 @@ export const members: Member[] = [
     name: "Naresh Kumar",
     position: "Project Staff",
     interests: "Experimental support and energetic materials testing.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Naresh+Kumar",
+    image: "/Naresh.jpeg",
     group: "Project Staffs"
   },
   {
@@ -552,13 +578,6 @@ export const members: Member[] = [
     group: "Alumni"
   },
   {
-    name: "Abhik Mukhopadhyay",
-    position: "Alumni",
-    interests: "Former student researcher in energetic materials.",
-    image: "/team-rId17.jpeg",
-    group: "Alumni"
-  },
-  {
     name: "Shreyas Sahu",
     position: "Alumni",
     interests: "Former team member working on propellant diagnostics.",
@@ -576,19 +595,41 @@ export const members: Member[] = [
     name: "Sairaj Gaunekar",
     position: "Alumni",
     interests: "Former lab researcher focused on combustion studies.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Sairaj+Gaunekar",
+    image: "/Sairaj.jpeg",
     group: "Alumni"
   },
   {
-    name: "Harshith Reddy Kaila",
-    position: "Alumni",
+    name: "Atri",
+    position: "Intern",
     interests: "Former lab researcher focused on combustion studies.",
-    image: "https://placehold.co/520x620/e8edf3/285f9f?text=Harshith+Reddy+Kaila",
-    group: "Alumni"
-  }
+    image: "/Atri.jpeg",
+    group: "Interns"
+  },
 ];
 
-export const galleryItems: GalleryItem[] = Array.from({ length: 10 }, (_, index) => ({
-  caption: `Placeholder gallery caption ${index + 1}`,
-  image: `https://placehold.co/${index % 3 === 0 ? "900x1180" : index % 3 === 1 ? "900x760" : "900x980"}/e9eef5/285f9f?text=Gallery+${index + 1}`
-}));
+export const galleryItems: GalleryItem[] = [
+  {
+    caption: " ",
+    image: "/gallery/G-1.jpeg"
+  },
+  {
+    caption: " ",
+    image: "/gallery/G-2.jpeg"
+  },
+  {
+    caption: " ",
+    image: "/gallery/G-3.jpeg"
+  },
+  {
+    caption: " ",
+    image: "/gallery/G-4.jpeg"
+  },
+  {
+    caption: " ",
+    image: "/gallery/G-5.jpeg"
+  },
+  {
+    caption: " ",
+    image: "/gallery/G-6.jpeg"
+  }
+];

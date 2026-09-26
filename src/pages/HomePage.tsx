@@ -40,21 +40,21 @@ export default function HomePage() {
             <h2 id="about-heading">About Us</h2>
           </div>
           <div className="about-copy" data-reveal>
-            <p>
+            <p style={{ margin: "0 0 9.5px 0" }}>
               The Energetics and Propulsion Laboratory (EPL) is dedicated to advancing rocket
               propulsion and energetic materials through innovative research and engineering.
             </p>
-            <p>
+            <p style={{ margin: "0 0 9.5px 0" }}>
               Our work combines experimental studies, computational analysis, and system design
               to address real-world aerospace challenges.
             </p>
-            <p>
+            <p style={{ margin: "0 0 9.5px 0" }}>
               Our research spans key areas including rocket propulsion, metal fuel combustion,
               and energetic propellants, along with emerging technologies such as electric
               propulsion, digital imaging and holography for diagnostics, and the development
               of green fuels for sustainable aerospace applications.
             </p>
-            <p>
+            <p style={{ margin: "0 0 10px 0" }}>
               At EPL, we aim to drive technological innovation while training the next
               generation of aerospace engineers and researchers.
             </p>
@@ -86,7 +86,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <dt>Email</dt>
-                  <dd><a href="mailto:gnan@mae.iith.ac.in">gnan@mae.iith.ac.in</a></dd>
+                  <dd><a  href="https://mail.google.com/mail/?view=cm&fs=1&to=gnan@mae.iith.ac.in" target="_blank" rel="noopener noreferrer" style={{ color: "blue", fontWeight: "bold" }}>gnan@mae.iith.ac.in</a></dd>
                 </div>
               </dl>
               <h4 className="research-heading">Current areas of research:</h4>

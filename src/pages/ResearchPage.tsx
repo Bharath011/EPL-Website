@@ -29,7 +29,7 @@ export default function ResearchPage() {
       <section className="section muted" id="research" aria-labelledby="research-title">
         <div className="container">
           <div className="section-heading" data-reveal>
-            <p className="eyebrow">Research</p>
+            <p className="eyebrow" style={{ visibility: "hidden", height: 0, margin: 0 }}>Research</p>
             <h2 id="research-title">Research Focus Areas</h2>
             <p>EPL research covers metal fuel combustion, advanced propellants, electrically controlled solid propellants, diagnostics, and air-breathing propulsion systems.</p>
           </div>
@@ -44,7 +44,7 @@ export default function ResearchPage() {
                 <div className="research-block__primary-image">
                   <img src={area.image} alt={area.title} loading="lazy" />
                 </div>
-                {((index !== 0 && area.images && area.images.length > 0) || area.video) ? (
+                {((area.images && area.images.length > 0) || area.video) ? (
                   <div className="research-block__gallery">
                     {area.video && (
                       <video
@@ -56,7 +56,7 @@ export default function ResearchPage() {
                         aria-label={`${area.title} video`}
                       />
                     )}
-                    {index !== 0 && area.images?.map((img) => (
+                    { area.images?.map((img) => (
                       <img key={img} src={img} alt="" loading="lazy" />
                     ))}
                   </div>

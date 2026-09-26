@@ -25,7 +25,7 @@ function useReveal() {
 function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
     <div className="section-heading" data-reveal>
-      <p className="eyebrow">{eyebrow}</p>
+      <p className="eyebrow" style={{ visibility: eyebrow === "Team" ? "hidden" : "visible",  height: eyebrow === "Team" ? 0 : "auto", margin: eyebrow === "Team" ? 0 : undefined, }}>{eyebrow}</p>
       <h2>{title}</h2>
       <p>{text}</p>
     </div>

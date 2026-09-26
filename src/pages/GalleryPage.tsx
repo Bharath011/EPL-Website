@@ -25,7 +25,8 @@ function useReveal() {
 function SectionHeading({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
     <div className="section-heading" data-reveal>
-      <p className="eyebrow">{eyebrow}</p>
+      <p className="eyebrow"  style={{ visibility: eyebrow === "Gallery" || eyebrow === "" ? "hidden" : "visible",
+    height: eyebrow === "Gallery" || eyebrow === "" ? 0 : undefined, margin: eyebrow === "Gallery" || eyebrow === "" ? 0 : undefined, }}>{eyebrow}</p>
       <h2>{title}</h2>
       <p>{text}</p>
     </div>
@@ -44,7 +45,7 @@ export default function GalleryPage() {
     <main id="main">
       <section className="section" id="gallery" aria-labelledby="gallery-title">
         <div className="container">
-          <SectionHeading eyebrow="Gallery" title="Placeholder Gallery" text="Responsive masonry image grid with replaceable placeholder assets and lightbox preview." />
+          <SectionHeading eyebrow="Gallery" title="Gallery" text="Experiments, Events & Achievements." />
           <div className="gallery-grid">
             {galleryItems.map((item, index) => (
               <button className="gallery-item" type="button" key={item.caption} onClick={() => setActiveImage(index)} data-reveal>
