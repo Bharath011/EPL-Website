@@ -54,7 +54,7 @@ export default function TeamPage() {
               <div className="card-grid four">
                 {membersInGroup.map((member) => (
                   <article className="member-card" key={member.name} data-reveal>
-                    <img src={member.image} alt={`${member.name} profile photo`} loading="lazy" />
+                    {group !== "Alumni" && (<img src={member.image} alt={`${member.name} profile photo`}loading="lazy"/>)}
                     <h3>{member.name}</h3>
                     <p>{member.position}</p>
                   </article>

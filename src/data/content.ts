@@ -1,10 +1,12 @@
 ﻿export type ResearchArea = {
   title: string;
+  status: string;
   description: string;
-  image: string;
+  image?: string;
   bullets?: string[];
   images?: string[];
   video?: string;
+  primaryVideo?: string;
 };
 
 export type NewsItem = {
@@ -72,19 +74,23 @@ export const stats = [
 
 export const researchAreas: ResearchArea[] = [
   {
-    title: "Combustion and Hydrolysis of Metal Particles for Recyclable Energy with Zero-Carbon Emissions",
+    title: "Investigating the combustion dynamics of micron and nano sized metal particles for energy and propulsion applications",
+    status: "Completed",
     description: "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
     image: "/research-media-12.png",
     images: ["/research-media-1-ezgif.com-resize.gif"],
     bullets: [
       "Investigating metal fuel flames as a recyclable, carbon-free energy carrier for next-generation sustainable energy systems.",
+      "Investigating metal particle combustion and hydrolysis for sustainable energy conversion and zero-carbon applications.",
+      "Characterizing flame structure, particle behavior, and combustion dynamics using advanced experimental diagnostics.",
       "Studying multiphase combustion phenomena in particle-laden and hybrid fuel flames to advance the understanding of reactive flow physics.",
       "Exploring combustion chemistry, flame dynamics, and stability to enable cleaner and more efficient combustion technologies.",
-      "Developing and applying advanced optical diagnostics for quantitative flame characterization and detailed reactive flow analysis.",
+      "Developing and applying advanced optical diagnostics for quantitative flame characterization and detailed reactive flow analysis."
     ],
   },
   {
     title: "Investigation on Combustion Characteristics of Composite Solid Propellants with Metal and Metal Hydride Additives",
+    status: "Ongoing",
     description: "Studying burning rates, agglomeration, and combustion performance of Al, Mg, B, LiAlH₄, MgH₂, TiH₂, and ZrH₂ enhanced propellants.",
     image: "/research-media-18.png",
     images: ["/research-media-19.jpeg"],
@@ -94,13 +100,17 @@ export const researchAreas: ResearchArea[] = [
       "Metal hydride-based composite solid propellants — LiAlH₄, MgH₂, TiH₂, and ZrH₂.",
       "Combustion characterization — Burning rate, high-speed flame imaging, and agglomerate analysis.",
       "Experimental and thermochemical evaluation of advanced energetic additives for solid rocket propulsion.",
+      "Investigating the influence of metal particle size and composition on propellant burning behavior and agglomeration.",
+      "Evaluating metal hydride additives for their effects on combustion performance and energetic characteristics of composite solid propellants.",
+      "Thermochemical analysis of advanced metal-based propellant additives."
     ],
   },
   {
     title: "Investigation on Metallized Hydro-reactive Propellants and Propulsive Performance of Water-Breathing Ramjet Engines",
+    status: "Ongoing",
     description: "Developing metal-based hydro-reactive fuels and water-breathing ramjet systems for underwater propulsion with improved thrust and efficiency.",
-    image: "/research-media-21.png",
-    images: ["/research-media-20.png", "/research-media-22.jpeg", "/research-media-2.png"],
+    primaryVideo: "/research-media-25.mp4",
+    images: ["/research-media-26.png"],
     bullets: [
       "Developing advanced metal-based propellants for underwater propulsion systems.",
       "Studying how hydro-reactive propellants burn and perform underwater.",
@@ -108,10 +118,15 @@ export const researchAreas: ResearchArea[] = [
       "Improving thrust, burn rate, and engine efficiency through experiments.",
       "Using advanced testing techniques to understand combustion and propellant behavior.",
       "Building safer, more efficient, and high-performance underwater propulsion technologies.",
+      "Developing advanced metal-based hydro-reactive propellants for underwater propulsion systems.",
+      "Investigating underwater combustion behavior and propulsive performance.",
+      "Optimizing propellant composition and material selection to achieve higher energy density and improved combustion efficiency.",
+      "Evaluating propellant water interactions for improved energy release and combustion stability."
     ],
   },
   {
     title: "Combustion Response Measurement of Composite Solid Propellants using T-Burner and Pulsed BEM",
+    status: "Ongoing",
     description: "Measuring solid propellant combustion response, acoustic effects, and motor performance using T-burners and pulsed burner element motor tests.",
     image: "/research-media-3.png",
     images: ["/research-media-4.jpeg", "/research-media-5.jpeg", "/research-media-6.jpeg"],
@@ -124,10 +139,14 @@ export const researchAreas: ResearchArea[] = [
       "Designing and manufacturing of a complete 3 kg BEM test motor for propellant evaluation.",
       "Conducting tests at different acoustic frequencies to study combustion behavior.",
       "Measurement of chamber pressure and burning performance during motor operation.",
+      "Investigating the influence of pressure oscillations on solid propellant combustion response.",
+      "Evaluating combustion stability under different acoustic pressure conditions.",
+      "Correlating combustion response measurements with solid rocket motor stability."
     ],
   },
   {
     title: "Development of Electrically Controlled Solid Propellants (ECSPs)",
+    status: "Ongoing",
     description: "Formulating electrically responsive propellants with conductive additives for controllable ignition, micro-thrusters, and spacecraft propulsion applications.",
     image: "/research-media-7.png",
     images: ["/research-media-8.jpeg", "/research-media-9.jpeg"],
@@ -138,11 +157,16 @@ export const researchAreas: ResearchArea[] = [
       "Development of PVA- and PEO-based polymer binder systems for electrically responsive propellants.",
       "Incorporation of metallic additives to improve energy release and combustion characteristics.",
       "Integration of carbon-based conductive additives to enhance electrical conductivity and ignition reliability.",
-      "Investigation of catalytic additives for improved ignition and combustion efficiency."
+      "Investigation of catalytic additives for improved ignition and combustion efficiency.",
+      "Investigation of electrical ignition and combustion response of ECSPs.",
+      "Optimization of electrical control parameters for reliable propellant ignition.",
+      "Evaluation of combustion behavior under different electrical input conditions.",
+      "Investigation of electrical control mechanisms for combustion regulation.",
     ],
   },
   {
     title: "In-situ Measurements of Aluminum Agglomerate Size, Velocity, and Temperature Using Simultaneous Digital Inline Holography and Imaging Pyrometry",
+    status: "Ongoing",
     description: "Combining digital inline holography and imaging pyrometry to quantify aluminum agglomerate size, velocity, temperature, and combustion dynamics.",
     image: "/research-media-10.gif",
     images: ["/research-media-11.gif"],
@@ -153,10 +177,14 @@ export const researchAreas: ResearchArea[] = [
       "Image processing algorithms for quantitative agglomerate temperature estimation.",
       "Thermo-physical characterization of agglomeration dynamics near the propellant burning surface.",
       "High-speed optical diagnostics of combustion and particulate evolution in composite solid propellants.",
+      "Development of advanced optical diagnostics for simultaneous particle measurements.",
+      "Quantitative analysis of agglomerate evolution during propellant combustion.",
+      "Automated detection and tracking of aluminum agglomerates in reconstructed holographic images.",
     ],
   },
   {
     title: "Experimental and Numerical Investigation of Swirling and Non-swirling Flow for Gaseous and Solid Fuels",
+    status: "Ongoing",
     description: "Experimental and numerical analysis of flame topologies, stabilization modes, ammonia-metal combustion, and residue chemistry.",
     image: "/research-media-13.jpg",
     bullets: [
@@ -166,11 +194,14 @@ export const researchAreas: ResearchArea[] = [
       "Effect of ammonia over metal combustion as pilot fuel.",
       "Residue analysis of combustion products and flue gases.",
       "Analysis of reaction mechanism for ammonia, aluminum, and magnesium.",
+      "Investigation of flame structure and stabilization under swirling and non-swirling conditions.",
+      "Characterization of combustion products and flue gases under different operating conditions.",
     ],
   },
   /*
   {
     title: "Solid Fuel Ducted Ramjet (SFDR) Propulsion",
+    status: "Ongoing",
     description: "Developing boron-based SFDR fuels with titanium and magnesium hydrides to improve ignition, combustion efficiency, and thrust performance.",
     image: "/research-media-15.jpeg",
     images: ["/research-media-16.jpeg"],
@@ -194,6 +225,68 @@ export const newsItems: NewsItem[] = Array.from({ length: 8 }, (_, index) => ({
 }));
 
 export const publications: Publication[] = [
+  {
+    title: "A comparative study on the effect of magnalium on burning behavior of hydroreactive solid propellants",
+    authors: "M. Harshavardhan, P. Jain, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "International Journal of Energetic Materials and Chemical Propulsion, Vol. 25",
+    year: "2026",
+    doi: "10.1615/intjenergeticmaterialschemprop.2026062249",
+  },
+  {
+    title: "Investigation on combustion characteristics of hydro-reactive solid propellants containing Al/Mg blends",
+    authors: "P. Jain, M. Harshavardhan, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "International Journal of Energetic Materials and Chemical Propulsion",
+    year: "2026",
+    doi: "10.1615/intjenergeticmaterialschemprop.2026062122",
+  },
+  {
+    title: "Effect of metal and metal hydride additives on combustion characteristics of composite solid propellants",
+    authors: "R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "30th International Colloquium on the Dynamics of Explosions and Reactive Systems (ICDERS)",
+    year: "2025",
+  },
+  {
+    title: "Burning characteristics of aluminium-magnesium blended hydro-reactive solid propellants",
+    authors: "Prateek Jain, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "30th International Colloquium on the Dynamics of Explosions and Reactive Systems (ICDERS)",
+    year: "2025",
+  },
+  {
+    title: "Experimental investigation on aluminum cloud flames stabilized over a fluidized bed laminar burner",
+    authors: "Y.S.A. Venkataram, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "15th Asia-Pacific Conference on Combustion (ASPAC)",
+    year: "2025",
+  },
+  {
+    title: "Combustion behaviour of composite solid propellants containing metal and metal hydride additives",
+    authors: "R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "14th International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP)",
+    year: "2025",
+  },
+  {
+    title: "A comparative study on the effect of magnalium on burning behaviour of hydro-reactive solid propellants",
+    authors: "Madishetti H, Jain P, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "14th International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP)",
+    year: "2025",
+  },
+  {
+    title: "Investigation on combustion characteristics of hydro-reactive solid propellants containing Al/Mg blends",
+    authors: "Jain P, Madishetti H, R.K. Deepachanthiran, K. Gnanaprakash",
+    outlet: "14th International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP)",
+    year: "2025",
+  },
+  {
+    title: "Influence of metal and metal hydride additives on combustion and agglomerate characteristics of composite solid propellants",
+    authors: "R.K. Deepachanthiran, M.N.S. Harsha Vardhan, K. Gnanaprakash",
+    outlet: "41st International Symposium on Combustion (ISOC)",
+    year: "2026",
+  },
+  {
+    title: "Effect of Magnesium and Magnesium Hydride on Combustion and Agglomeration characteristics of Composite Solid Propellants",
+    authors: "R.K. Deepachanthiran, M.N.S. Harsha Vardhan, K. Gnanaprakash, C.L. Dora",
+    outlet: "15th International High Energy Materials Conference & Exhibits (HEMCE), FA02-P45, Pg. 223-231",
+    year: "2026",
+  },
   {
     title: "Combustion characteristics of lithium perchlorate-based electrically controlled solid propellants at elevated pressures",
     authors: "K. Gnanaprakash, D. Lim, J.J. Yoh",
@@ -393,6 +486,30 @@ export const publications: Publication[] = [
     outlet: "11th AIAA Aviation Technology, Integration, and Operations (ATIO) Conference, Virginia, USA",
     year: "2011",
   },
+  {
+  title: "A comparative study on the effect of magnalium on burning behavior of hydro-reactive solid propellants",
+  authors: "Madishetti H, Jain P, RKD, Gnanaprakash K",
+  outlet: "14th International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP), Abstract No. 63",
+  year: "2025",
+},
+{
+  title: "Investigation on combustion characteristics of hydro-reactive solid propellants containing Al/Mg blends",
+  authors: "Jain P, Madishetti H, RKD, Gnanaprakash K",
+  outlet: "14th International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP), Abstract No. 69",
+  year: "2025",
+},
+{
+  title: "A comparative study on the effect of magnalium on burning behavior of hydro-reactive solid propellants",
+  authors: "Madishetti H, Abhik Mukhopadhyay, Gnanaprakash K",
+  outlet: "XX International Workshop on High Energy and Special Materials (HEMs-2025)",
+  year: "2025",
+},
+{
+  title: "Combustion Characteristics of Aluminium-Based Hydro-Reactive Propellants with Magnesium Additives",
+  authors: "Harshavardhan Madishetti, Prateek Jain, Kishore Kumar Katikani, Prasant Kumar Pattnayak, Gnanaprakash K",
+  outlet: "15th International High Energy Materials Conference & Exhibits (HEMCE 2026), FA02-P101, pp. 437–443",
+  year: "2026",
+},
 ];
 
 export const courses: Course[] = [
@@ -522,7 +639,7 @@ export const members: Member[] = [
     group: "M. Tech Scholars"
   },
   {
-    name: "Balaji",
+    name: "KPSS Venkata Balaji",
     position: "M. Tech Scholar",
     interests: "Electric solid propellant combustion and diagnostics.",
     image: "/Balaji.jpeg",
@@ -571,40 +688,40 @@ export const members: Member[] = [
     group: "Project Staffs"
   },
   {
+    name: "Atri Bandyopadhyay",
+    position: "Intern",
+    interests: "Former lab researcher focused on combustion studies.",
+    image: "/Atri.jpeg",
+    group: "Interns"
+  },
+  {
     name: "Prateek Jain",
-    position: "Alumni",
+    position: "2021-23",
     interests: "Former EPL researcher in combustion and propulsion.",
     image: "https://placehold.co/520x620/e8edf3/285f9f?text=Prateek+Jain",
     group: "Alumni"
   },
   {
     name: "Shreyas Sahu",
-    position: "Alumni",
+    position: "2024-26",
     interests: "Former team member working on propellant diagnostics.",
     image: "/team-rId18.jpeg",
     group: "Alumni"
   },
   {
     name: "Amit Kumar Mishra",
-    position: "Alumni",
+    position: "2024-26",
     interests: "Former researcher in propulsion and experimental analysis.",
     image: "/team-rId19.jpeg",
     group: "Alumni"
   },
   {
     name: "Sairaj Gaunekar",
-    position: "Alumni",
+    position: "2025-26",
     interests: "Former lab researcher focused on combustion studies.",
     image: "/Sairaj.jpeg",
     group: "Alumni"
-  },
-  {
-    name: "Atri",
-    position: "Intern",
-    interests: "Former lab researcher focused on combustion studies.",
-    image: "/Atri.jpeg",
-    group: "Interns"
-  },
+  }
 ];
 
 export const galleryItems: GalleryItem[] = [

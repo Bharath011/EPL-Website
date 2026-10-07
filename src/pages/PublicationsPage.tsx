@@ -65,10 +65,10 @@ export default function PublicationsPage() {
   const conferencePublications = sortedPublications.filter((publication) => isConferencePublication(publication.outlet));
   const journalPublications = sortedPublications.filter((publication) => !isConferencePublication(publication.outlet));
 
-  const renderPublication = (publication: typeof publications[number], index: number) => (
+  const renderPublication = (publication: typeof publications[number], index: number, total: number) => (
     <article className="publication-card" key={`${publication.title}-${publication.year}-${index}`} >
       <div>
-        <h3 style={{ marginTop: 0 }}>{index + 1}. {publication.title}</h3>
+        <h3 style={{ marginTop: 0 }}>{total - index}. {publication.title}</h3>
         <p>{publication.authors}</p>
         <span>{publication.outlet}{publication.year ? ` | ${publication.year}` : ""}{publication.doi ? ` | DOI: ${publication.doi}` : ""}</span>
       </div>
@@ -82,21 +82,21 @@ export default function PublicationsPage() {
           <SectionHeading eyebrow="" title="Publications" text="Selected peer-reviewed articles and conference proceedings from EPL researchers." />
           <div className="publication-meta" data-reveal>
             <p>
-              View the latest EPL publications on Google Scholar: <a href={scholarProfileUrl} target="_blank" rel="noreferrer">Scholar profile</a>.
+              Explore EPL members' research publications on Google Scholar: <a href={scholarProfileUrl} target="_blank" rel="noreferrer"  className="scholar-link">Gnanaprakash Kanagaraj</a>.
             </p>
           </div>
 
           <div className="publication-section">
             <h3>Journal Publications ({journalPublications.length})</h3>
             <div className="publication-list">
-              {journalPublications.map((publication, index) => renderPublication(publication, index))}
+              {journalPublications.map((publication, index) => renderPublication(publication, index, journalPublications.length))}
             </div>
           </div>
 
           <div className="publication-section" style={{ marginTop: "2.5rem" }}>
             <h3>Conference Publications ({conferencePublications.length})</h3>
             <div className="publication-list">
-              {conferencePublications.map((publication, index) => renderPublication(publication, index))}
+              {conferencePublications.map((publication, index) => renderPublication(publication, index, conferencePublications.length))}
             </div>
           </div>
         </div>
